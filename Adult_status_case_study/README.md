@@ -1,15 +1,27 @@
 # Adult Status Case Study
 
-A exploratory data analysis project exploring the **Adult Income dataset** to understand factors that influence whether an individual earns more than $50K/year.
+## 📌 Overview
+This project performs **data cleaning, exploration, and analysis** on the Adult Income dataset to understand demographic and work-related factors affecting income levels.  
+The dataset is sourced from the UCI Machine Learning Repository and contains census information.
 
-## 📊 Project Highlights
-- Cleaned and prepared the dataset (handled missing values, removed duplicates, dropped irrelevant columns).
-- Performed **Exploratory Data Analysis (EDA)** to explore distributions and trends.
-- Visualized patterns by age, education, workclass, and other demographics.
-- Extracted key insights about income distribution.
+## 📊 Key Steps in the Notebook
+1. **Data Loading**
+   - Reads `adult.csv` dataset into Pandas.
 
-## 🛠 Tools & Libraries
-- Python, Jupyter Notebook
-- Pandas, NumPy
-- Matplotlib, Seaborn
+2. **Initial Exploration**
+   - Shape, data types, null value checks.
+   - Random sampling preview.
 
+3. **Data Cleaning**
+   - Replaces `'?'` placeholders with `NaN`.
+   - Drops rows with missing values.
+   - Removes duplicates.
+   - Drops irrelevant columns (`educational-num`, `capital-gain`, `capital-loss`).
+
+4. **Exploratory Data Analysis (EDA)**
+   - Distribution plots (Age, Workclass, Education, Occupation, etc.).
+   - Filtering and counting specific categories (e.g., Bachelor's & Master's holders).
+   - Categorical vs. target (`income`) visualizations.
+
+5. **Insights**
+   - Identifies trends in education, workclass, age groups, and their correlation with income.
