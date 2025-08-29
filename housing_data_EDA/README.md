@@ -1,4 +1,3 @@
-Perfect 👍 Here’s a **starter `README.md` template** for your housing EDA project. You can copy–paste it 
 # 🏡 Housing Prices – Exploratory Data Analysis
 
 ## 📌 Project Overview
