@@ -43,9 +43,14 @@ All plots generated during EDA are saved in the **`plots/`** folder. Examples in
 
 ---
 
-## 🚀 Next Steps
+## 🧹 Data Cleaning
 
-* Data cleaning (handle missing values, outliers, transformations)
+The following data cleaning and preprocessing steps were performed in `02_data_cleaning.ipynb`:
 
----
+* **Missing Values**: Handled by imputing `LotFrontage` and other numerical values with the median. Missing categorical values were also addressed, and the `Electrical` variable was imputed using the mode.
+* **Data Types**: Ensured year-related data types were kept as integers.
+* **Outliers**: Treated outliers by clipping using z-scores with custom thresholds.
+* **Feature Transformation**: Skewed numeric features were transformed using `log1p`.
+* **Duplicates**: Any duplicate rows found were removed.
 
+The cleaned dataset is exported to `../dataset/cleaned_train.csv`.
